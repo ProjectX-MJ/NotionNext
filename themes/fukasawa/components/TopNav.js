@@ -27,13 +27,13 @@ const TopNav = props => {
           <SearchInput {...props} />
         </div>
       </Collapse>
-      <div className='w-full flex justify-between items-center p-4 '>
-        {/* 左侧LOGO 标题 */}
-        <div className='flex flex-none flex-grow-0'>
-          <Logo {...props} />
-        </div>
-        <div className='flex'>
-        </div>
+      // <div className='w-full flex justify-between items-center p-4 '>
+      //   {/* 左侧LOGO 标题 */}
+      //   <div className='flex flex-none flex-grow-0'>
+      //     <Logo {...props} />
+      //   </div>
+      //   <div className='flex'>
+      //   </div>
 
         {/* 右侧功能 */}
         <div className='mr-1 flex justify-end items-center text-sm space-x-4 font-serif dark:text-gray-200'>
