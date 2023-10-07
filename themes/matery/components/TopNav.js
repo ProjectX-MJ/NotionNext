@@ -28,19 +28,18 @@ const TopNav = props => {
       const scrollS = window.scrollY
       const nav = document.querySelector('#sticky-nav')
       const header = document.querySelector('#header')
-      const showNav = false
-        // scrollS <= windowTop || scrollS < 5 || (header && scrollS <= header.clientHeight * 2)// 非首页无大图时影藏顶部 滚动条置顶时隐藏// 非首页无大图时影藏顶部 滚动条置顶时隐藏
+      const showNav = scrollS <= windowTop || scrollS < 5 || (header && scrollS <= header.clientHeight * 2)// 非首页无大图时影藏顶部 滚动条置顶时隐藏// 非首页无大图时影藏顶部 滚动条置顶时隐藏
       // 是否将导航栏透明
       const navTransparent = header && scrollS < 300 // 透明导航条的条件
 
       if (navTransparent) {
-        nav && nav.classList.replace('bg-indigo-700', 'bg-none')
-        nav && nav.classList.replace('text-black', 'text-white')
+        nav && nav.classList.replace('bg-black', 'bg-none')
+        nav && nav.classList.replace('text-white', 'text-white')
         nav && nav.classList.replace('shadow-xl', 'shadow-none')
         nav && nav.classList.replace('dark:bg-hexo-black-gray', 'transparent')
       } else {
-        nav && nav.classList.replace('bg-none', 'bg-indigo-700')
-        nav && nav.classList.replace('text-white', 'text-black')
+        nav && nav.classList.replace('bg-none', 'bg-black')
+        nav && nav.classList.replace('text-white', 'text-white')
         nav && nav.classList.replace('shadow-none', 'shadow-xl')
         nav && nav.classList.replace('transparent', 'dark:bg-hexo-black-gray')
       }
