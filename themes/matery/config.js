@@ -1,5 +1,5 @@
 const CONFIG = {
-  HOME_BANNER_ENABLE: true,
+  HOME_BANNER_ENABLE: false,
   // 3.14.1以后的版本中，欢迎语在blog.config.js中配置，用英文逗号','隔开多个。
   HOME_BANNER_GREETINGS: ['探索更多的可能性'], // 首页大图标语文字
 
@@ -15,9 +15,9 @@ const CONFIG = {
   MENU_ARCHIVE: false, // 显示归档
   MENU_SEARCH: false, // 显示搜索
 
-  POST_LIST_COVER: false, // 文章封面
-  POST_LIST_SUMMARY: false, // 文章摘要
-  POST_LIST_PREVIEW: false, // 读取文章预览
+  POST_LIST_COVER: true, // 文章封面
+  POST_LIST_SUMMARY: true, // 文章摘要
+  POST_LIST_PREVIEW: true, // 读取文章预览
 
   ARTICLE_ADJACENT: false, // 显示上一篇下一篇文章推荐
   ARTICLE_COPYRIGHT: false, // 显示文章版权声明
