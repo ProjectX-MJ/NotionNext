@@ -34,7 +34,7 @@ const TopNav = props => {
 
       if (navTransparent) {
         nav && nav.classList.replace('bg-black', 'bg-none')
-        nav && nav.classList.replace('text-white', 'text-white')
+        nav && nav.classList.replace('text-white', 'transparent')
         nav && nav.classList.replace('shadow-xl', 'shadow-none')
         nav && nav.classList.replace('dark:bg-hexo-black-gray', 'transparent')
       } else {
