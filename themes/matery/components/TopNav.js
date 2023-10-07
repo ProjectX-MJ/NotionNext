@@ -37,18 +37,18 @@ const TopNav = props => {
         nav && nav.classList.replace('text-white', 'text-none')
         nav && nav.classList.replace('shadow-xl', 'shadow-none')
         nav && nav.classList.replace('dark:bg-hexo-black-gray', 'transparent')
+        nav && nav.classList.replace('top-0', '-top-20')
       } else {
         nav && nav.classList.replace('bg-none', 'bg-black')
         nav && nav.classList.replace('text-none', 'text-white')
         nav && nav.classList.replace('shadow-none', 'shadow-xl')
         nav && nav.classList.replace('transparent', 'dark:bg-hexo-black-gray')
+        nav && nav.classList.replace('-top-20', 'top-0')
       }
 
       if (!showNav) {
-        nav && nav.classList.replace('top-0', '-top-20')
         windowTop = scrollS
       } else {
-        nav && nav.classList.replace('-top-20', 'top-0')
         windowTop = scrollS
       }
       navDarkMode()
